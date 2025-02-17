@@ -3,6 +3,7 @@ package presentation;
 import dominio.Pelicula;
 import service.IServiceMovies;
 import service.ListMoviesService;
+import service.ServiceMoviesFile;
 
 import java.util.Scanner;
 
@@ -11,7 +12,8 @@ public class CatalogoPeliculasApp {
         var salir = false;
         var consola = new Scanner(System.in);
         //Agregar Implementación del servicio
-        IServiceMovies moviesService = new ListMoviesService();
+        //IServiceMovies moviesService = new ListMoviesService();
+        IServiceMovies moviesService = new ServiceMoviesFile();
         while (!salir){
             try{
                 showMenu();

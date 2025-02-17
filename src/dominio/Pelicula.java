@@ -33,9 +33,12 @@ public class Pelicula {
 
     @Override
     public String toString() {
-        return "Pelicula{" +
+
+        return this.name;
+        /*return "Pelicula{" +
                 "name='" + name + '\'' +
                 '}';
+         */
     }
 
     public static void main(String[] args) {
